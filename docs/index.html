@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fylo</title>
+        <link rel="icon" type="image/x-icon" href="images\favicon-32x32.png">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+       <header>
+            <img src="images\logo.svg" class="logo"/>
+            <ul>
+                <li>
+                    <a>Features</a>
+                </li>
+                <li>
+                    <a>Team</a>
+                </li>
+                <li>
+                    <a>Sign In</a>
+                </li>
+            </ul>
+       </header>
+
+       <main>
+            <section class="secao1">
+                <div class="div-secao p">
+                    <h2>All your files in one secure<br />location, accessible anywhare.</h2>
+                    <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with firends, family and co-workers.</p>
+                    <div class="formEmail">
+                        <input placeholder="Enter your email" type="email" id="email"/>
+                        <button type="submit" onclick="started()"> Get Started</button>
+                    </div>
+                </div>
+                <div class="div-secao s">
+                    <img src="images\illustration-1.svg"/>
+                </div>
+            </section>
+       </main>
+       <footer>
+        <div>
+            <img src="images\logo.svg" class="whitelogo"/>
+            <p> <img src= "images\icon-phone.svg" /> Phone: +1-543-123-4567 </p>
+            <p> <img src="images\icon-email.svg" /> example@fylo.com </p>
+        </div>
+        <div class="lista">
+            <a>About Us</a>
+            <a>Jobs</a>
+            <a>Press</a>
+            <a>Blog</a>
+        </div>
+        <div class="lista">
+            <a>Contact Us</a>
+            <a>Terms</a>
+            <a>Privacy</a>
+        </div>
+        <div>
+            <ul>
+                <li class="icone"> <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" /> </li>
+                <li class="icone"> <img src="https://cdn-icons-png.flaticon.com/512/39/39552.png" /> </li>
+                <li class="icone"> <img src="https://cdn.icon-icons.com/icons2/791/PNG/512/instagram_f_icon-icons.com_65485.png" /> </li>
+            </ul>
+        </div>
+
+
+
+       </footer>
+       <script>
+        function started(){
+            alert("E-mail "+document.getElementById('email').value + "cadastrado com sucesso!");
+        
+        }
+       </script>
+    </body>
+</html>

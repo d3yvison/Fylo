@@ -1,0 +1,139 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+    header{
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+        .logo{
+            width: 150px;
+        }
+        ul{
+            display: flex;
+            width: 30%;
+            justify-content: space-evenly;
+        }
+            li {
+                list-style: none;
+            }
+            li a{
+                cursor: pointer;
+            }
+            
+    .secao1{
+        display: flex;
+        justify-content: space-between;
+         padding: 0 50px;
+    }
+        .div-secao{
+            width: 50%;
+        }
+            .div-secao.p{
+               padding-right: 20px;
+            }            
+                .div-secao.p h2{
+                    font-size: 40px;
+                }
+                .div-secao.p p{
+                    width: 90%;
+                    margin: 40px 0;
+                }
+            
+                .formEmail{
+                    display: flex;
+                }
+                .formEmail input{
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    width: 300px;
+                    border-color: gray;
+                }
+                .formEmail button{
+                    width: 150px;
+                    height: 40px;
+                    background-color: blue;
+                    box-shadow: 0px 0px 8px 2px gray;
+                    border: none;
+                    border-radius: 5px;
+                    color: white;
+                    cursor: pointer;
+                    list-style-image: u;
+                }
+            .div-secao.s img{
+                width: 80%;
+            }
+    footer {
+        margin-top: 20px;
+    background-color: hsl(243, 87%, 12%);
+    display: grid;
+    padding: 80px 40px;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+}
+    footer div p,
+    footer div a{color:white ; font-size: 15px; 
+    cursor: pointer;}
+        .whitelogo {background-color: white; padding: 15px; border-radius: 10px; }
+        .icone {border: 2px solid white;
+        border-radius: 50%;
+        width: 28px; height: 28px;
+        padding: 3px; display: flex; align-items: center; justify-content: center;
+        margin-right: 5px; }
+        .icone img{width: 21px;height: 21px; filter: invert(1); cursor: pointer;}
+
+    .lista {display: flex; flex-direction: column;}
+
+
+    @media screen and (max-width:600px){
+        header{
+        flex-direction: column;
+        align-items: center;
+    }
+        .logo{
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        ul{
+            width: 100%;
+        }
+
+        .secao1{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+        .div-secao{
+            width: 100%;
+        }
+            .div-secao.p{
+               padding-right: 0px;
+            }            
+                .div-secao.p h2{
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .div-secao.p p{
+                    width: 100%;
+                    margin: 20px 0;
+                    text-align: center;
+                    font-size: 15px;
+                }         
+                .formEmail input{
+                    width: 100px;
+                }
+               
+         footer {
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+}   .whitelogo{
+    margin-bottom: 10px;
+}
+                footer div{
+                    margin: 10px 0;
+                    text-align: center;
+                }
+           
+    }
